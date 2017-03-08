@@ -51,6 +51,8 @@ cordova run android
 - Native alert dialog test
 - Native confirm dialog test with 2 choices (labels BROKEN on browser)
 - Native confirm dialog test with 3 choices (BROKEN on browser & Windows Mobile)
+- Native prompt dialog test with 2 choices (PARTIALLY BROKEN on browser)
+- Native prompt dialog test with 3 choices (PARTIALLY BROKEN on browser & Windows Mobile)
 - Location reload
 - Follow link to page 2
 - Change window.location to page 2
