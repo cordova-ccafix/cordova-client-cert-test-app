@@ -1,0 +1,30 @@
+{
+  "name": "cordova-dialogs-bootstrap-test",
+  "version": "0.1.0",
+  "description": "Cordova dialogs bootstrap test app: template to play with Cordova dialogs.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brodybits/cordova-dialogs-bootstrap-test.git"
+  },
+  "keywords": [
+    "cordova",
+    "dialogs"
+  ],
+  "author": "@brodybits (Christopher J. Brody aka Chris Brody)",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/brodybits/cordova-dialogs-bootstrap-test/issues"
+  },
+  "homepage": "https://github.com/brodybits/cordova-dialogs-bootstrap-test#readme",
+  "dependencies": {
+    "cordova-plugin-dialogs": "^2.0.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-dialogs": {}
+    }
+  }
+}
