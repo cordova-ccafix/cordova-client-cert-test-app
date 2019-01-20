@@ -1,3 +1,4 @@
 .*.swp
 plugins
 platforms
+package-lock.json
