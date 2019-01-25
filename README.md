@@ -1,6 +1,4 @@
-# Cordova dialogs bootstrap test app
-
-Template to play with Cordova dialogs. May be used as a starter project.
+# Cordova test app
 
 **AUTHOR:** [@brodybits (Christopher J. Brody aka Chris Brody)](https://github.com/brodybits)
 
@@ -49,14 +47,3 @@ cordova run android
 ## Functionality
 
 - Native alert dialog test
-- Native confirm dialog test with 2 choices (labels BROKEN on browser)
-- Native confirm dialog test with 3 choices (BROKEN on browser & Windows Mobile)
-- Native prompt dialog test with 2 choices (PARTIALLY BROKEN on browser)
-- Native prompt dialog test with 3 choices (PARTIALLY BROKEN on browser & Windows Mobile)
-- Location reload
-- Follow link to page 2
-- Change window.location to page 2
-
-## Multi-page test
-
-It is possible to switch between two pages using "follow link" buttons. The main page also has a button to go to page 2 by changing `window.location`. There is also a button on both pages to try `location.reload()`.
