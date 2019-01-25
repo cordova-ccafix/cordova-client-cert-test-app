@@ -1,14 +1,32 @@
-# Cordova test app
+# Cordova client cert test app
 
 **AUTHOR:** [@brodybits (Christopher J. Brody aka Chris Brody)](https://github.com/brodybits)
 
-**LICENSE:** [CC0 1.0 (public domain)](https://creativecommons.org/publicdomain/zero/1.0/)
+**LICENSE:** Apache 2.0
 
-**NOTE:** This project includes JQuery (2.2.4) and Bootstrap (3.3.6) under the MIT license. Otherwise there is no code copied from other sources.
+**NOTE:** This project includes JQuery (2.2.4) and Bootstrap (3.3.6) under the MIT license.
 
 **IMPORTANT:** Whitelist and intent items are omitted from this test app.
 
 **NOTICE:** This test does not work on macOS ("osx") since it is not supported by `cordova-plugin-dialogs`.
+
+## About
+
+This app attempts to use client certificates to access a <https://ccatesting.com/authenticate> which uses client certificate authentication. The response tells whether the server could read the client certificate and if the client certificate authentication was successful.
+
+This app uses <https://github.com/mwaylabs/cordova-plugin-client-certificate> which provides updated support for client certificates on iOS.
+
+The server at <https://ccatesting.com/> was setup according to guidance from:
+
+- <https://medium.com/@sevcsik/authentication-using-https-client-certificates-3c9d270e8326>
+- <https://code.lengstorf.com/deploy-nodejs-ssl-digitalocean/>
+- <https://itnext.io/node-express-letsencrypt-generate-a-free-ssl-certificate-and-run-an-https-server-in-5-minutes-a730fbe528ca>
+- <https://github.com/johannes-staehlin/cordova-client-cert-authentication/issues/7>
+
+This app contains a couple client certificates in `www` directory, which is FOR TESTING PURPOSES ONLY (SHOULD NEVER BE DONE IN PRODUCTION):
+
+- `alice.p12` - generated based on the `ccatesting.com` server keys
+- `bob.p12` - "self-generated" certificate
 
 ## Dependencies
 
@@ -47,3 +65,6 @@ cordova run android
 ## Functionality
 
 - Native alert dialog test
+- register built-in `alice.p12` client certificate
+- register built-in `bob.p12` client certificate
+- try XHR request to <https://ccatesting.com/authenticate>
