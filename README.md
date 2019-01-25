@@ -1,4 +1,4 @@
-# Cordova client cert test app
+# Cordova client cert test app with myp12 support
 
 **AUTHOR:** [@brodybits (Christopher J. Brody aka Chris Brody)](https://github.com/brodybits)
 
@@ -14,7 +14,7 @@
 
 This app attempts to use client certificates to access a <https://ccatesting.com/authenticate> which uses client certificate authentication. The response tells whether the server could read the client certificate and if the client certificate authentication was successful.
 
-This app uses <https://github.com/mwaylabs/cordova-plugin-client-certificate> which provides updated support for client certificates on iOS.
+This app uses plugin installed from `https://github.com/brodybits/cordova-plugin-client-certificate#myp12-support` which supports file association for p12 client certificates with `myp12` extension on iOS.
 
 The server at <https://ccatesting.com/> was setup according to guidance from:
 
@@ -27,6 +27,14 @@ This app contains a couple client certificates in `www` directory, which is FOR 
 
 - `alice.p12` - generated based on the `ccatesting.com` server keys
 - `bob.p12` - "self-generated" certificate
+
+How to test `myp12` file association on iOS:
+
+- copy `alice.p12` from `www` into another file with the following name: `alice.myp12`
+- send `alice.myp12` to test iOS device, using email for example
+- try opening `alice.myp12` from a program such as email, and tell the device to open the file with this test app
+- this app will generate a log message that the `myp12` file was received and then register the certificate (with no password)
+- try XHR request test; the response should indicate that the Alice certificate was used
 
 ## Dependencies
 
@@ -68,3 +76,5 @@ cordova run android
 - register built-in `alice.p12` client certificate
 - register built-in `bob.p12` client certificate
 - try XHR request to <https://ccatesting.com/authenticate>
+
+If the user opens a p12 client certificate with `myp12` extension with this app, the plugin installed from `https://github.com/brodybits/cordova-plugin-client-certificate#myp12-support` will register the client certificate. Response from  <https://ccatesting.com/authenticate> will show that the p12 client certificate with `myp12` extension was used.
