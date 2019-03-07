@@ -6,14 +6,26 @@
 
 <body>
   <div class="page-header">
-    <h3>Client cert access test</h3>
+    <h2>Client cert access test</h2>
   </div>
+
+  <span class="border-dark">
+  <h3>access test</h3>
   <div class="btn-group-vertical">
-    <button id="native-alert-test" type="button" class="btn btn-lg btn-default">Native alert dialog test</button>
-    <button id="register-alice" type="button" class="btn btn-lg btn-default">Register alice.p12</button>
-    <button id="register-bob" type="button" class="btn btn-lg btn-default">Register bob.p12</button>
     <button id="test-access" type="button" class="btn btn-lg btn-default">test access via XHR</button>
   </div>
+  <hr />
+  <h3>register from file</h3>
+  <div class="btn-group-vertical">
+    <button id="register-alice" type="button" class="btn btn-lg btn-default">Register alice.p12 from www</button>
+    <button id="register-bob" type="button" class="btn btn-lg btn-default">Register bob.p12 from www</button>
+  </div>
+  <hr />
+  <h3>extra dialog plugin test</h3>
+  <div class="btn-group-vertical">
+    <button id="native-alert-test" type="button" class="btn btn-lg btn-default">Native alert dialog test</button>
+  </div>
+  </span>
 
   <script src="cordova.js"></script>
 
