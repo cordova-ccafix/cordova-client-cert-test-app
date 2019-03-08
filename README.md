@@ -1,4 +1,4 @@
-# Cordova client cert test app with myp12 support
+# Cordova client cert test app with myp12 support on iOS
 
 **AUTHOR:** [@brodybits (Christopher J. Brody aka Chris Brody)](https://github.com/brodybits)
 
@@ -12,9 +12,11 @@
 
 ## About
 
-This app attempts to use client certificates to access a <https://ccatesting.com/authenticate> which uses client certificate authentication. The response tells whether the server could read the client certificate and if the client certificate authentication was successful.
+This app attempts to use client certificates to access <https://ccatesting.com/authenticate> which uses client certificate authentication. The response tells whether the server could read the client certificate and if the client certificate authentication was successful.
 
-This app uses plugin installed from `https://github.com/brodybits/cordova-plugin-client-certificate#myp12-support` which supports file association for p12 client certificates with `myp12` extension on iOS.
+This app uses the plugin installed from `https://github.com/brodybits/cordova-plugin-client-certificate#myp12-support` which supports file association for p12 client certificates with `myp12` extension on iOS.
+
+This means that if the user tell an app such as Mail to open a `myp12` client certificate file with *this* app, the plugin in *this* app will register the client certificate file for subsequent use with the test server URL at <https://ccatesting.com/authenticate>. The user should see a confirmation that the server sees the certificate from the `myp12` file.
 
 The server at <https://ccatesting.com/> was setup according to guidance from:
 
@@ -23,7 +25,7 @@ The server at <https://ccatesting.com/> was setup according to guidance from:
 - <https://itnext.io/node-express-letsencrypt-generate-a-free-ssl-certificate-and-run-an-https-server-in-5-minutes-a730fbe528ca>
 - <https://github.com/johannes-staehlin/cordova-client-cert-authentication/issues/7>
 
-This app contains a couple client certificates in `www` directory, which is FOR TESTING PURPOSES ONLY (SHOULD NEVER BE DONE IN PRODUCTION):
+This app contains a couple client certificates in `www` directory, which is FOR TESTING PURPOSES ONLY (THIS SHOULD NEVER BE DONE IN PRODUCTION):
 
 - `alice.p12` - generated based on the `ccatesting.com` server keys
 - `bob.p12` - "self-generated" certificate
