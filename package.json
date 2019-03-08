@@ -1,13 +1,13 @@
 {
-  "name": "cordova-dialogs-bootstrap-test",
+  "name": "client-cert-auth-test",
   "version": "0.1.0",
-  "description": "Cordova dialogs bootstrap test app: template to play with Cordova dialogs.",
+  "description": "Client cert auth access test",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brodybits/cordova-dialogs-bootstrap-test.git"
+    "url": "git+https://github.com/cordova-ccafix/cordova-client-cert-test-app.git"
   },
   "keywords": [
     "cordova",
@@ -16,9 +16,9 @@
   "author": "@brodybits (Christopher J. Brody aka Chris Brody)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/brodybits/cordova-dialogs-bootstrap-test/issues"
+    "url": "https://github.com/cordova-ccafix/cordova-client-cert-test-app/issues"
   },
-  "homepage": "https://github.com/brodybits/cordova-dialogs-bootstrap-test#readme",
+  "homepage": "https://github.com/cordova-ccafix/cordova-client-cert-test-app#readme",
   "dependencies": {
     "cordova-plugin-client-certificate": "git+https://github.com/cordova-ccafix/cordova-plugin-client-certificate-support.git#combined-updates",
     "cordova-plugin-dialogs": "^2.0.1",
