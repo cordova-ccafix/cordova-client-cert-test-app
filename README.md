@@ -14,7 +14,7 @@
 
 This app attempts to use client certificates to access <https://ccatesting.com/authenticate> which uses client certificate authentication. The response tells whether the server could read the client certificate and if the client certificate authentication was successful.
 
-This app uses the plugin installed from `https://github.com/brodybits/cordova-plugin-client-certificate#myp12-support` which supports file association for p12 client certificates with `myp12` extension on iOS.
+This app uses the plugin installed from `https://github.com/cordova-ccafix/cordova-plugin-client-certificate-support#combined-updates` which supports file association for p12 client certificates with `myp12` extension on iOS.
 
 This means that if the user tell an app such as Mail to open a `myp12` client certificate file with *this* app, the plugin in *this* app will register the client certificate file for subsequent use with the test server URL at <https://ccatesting.com/authenticate>. The user should see a confirmation that the server sees the certificate from the `myp12` file.
 

@@ -20,15 +20,15 @@
   },
   "homepage": "https://github.com/brodybits/cordova-dialogs-bootstrap-test#readme",
   "dependencies": {
-    "cordova-plugin-client-certificate": "git+https://github.com/brodybits/cordova-plugin-client-certificate.git#myp12-support",
+    "cordova-plugin-client-certificate": "git+https://github.com/cordova-ccafix/cordova-plugin-client-certificate-support.git#combined-updates",
     "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-file": "^6.0.1"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-dialogs": {},
-      "cordova-plugin-client-certificate": {},
-      "cordova-plugin-file": {}
+      "cordova-plugin-file": {},
+      "cordova-plugin-client-certificate": {}
     }
   }
 }
