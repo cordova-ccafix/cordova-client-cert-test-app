@@ -79,4 +79,4 @@ cordova run android
 - register built-in `bob.p12` client certificate
 - try XHR request to <https://ccatesting.com/authenticate>
 
-If the user opens a p12 client certificate with `myp12` extension with this app, the plugin installed from `https://github.com/brodybits/cordova-plugin-client-certificate#myp12-support` will register the client certificate. Response from  <https://ccatesting.com/authenticate> will show that the p12 client certificate with `myp12` extension was used.
+If the user opens a p12 client certificate with `myp12` extension with this app, the plugin installed from <https://github.com/cordova-ccafix/cordova-plugin-client-certificate-support> will register the client certificate. Response from  <https://ccatesting.com/authenticate> will show that the p12 client certificate with `myp12` extension was used.
