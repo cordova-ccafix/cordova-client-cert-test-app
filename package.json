@@ -19,16 +19,16 @@
     "url": "https://github.com/cordova-ccafix/cordova-client-cert-test-app/issues"
   },
   "homepage": "https://github.com/cordova-ccafix/cordova-client-cert-test-app#readme",
-  "dependencies": {
-    "cordova-plugin-client-certificate-support": "git+https://github.com/cordova-ccafix/cordova-plugin-client-certificate-support.git",
-    "cordova-plugin-dialogs": "^2.0.1",
-    "cordova-plugin-file": "^6.0.1"
-  },
   "cordova": {
     "plugins": {
       "cordova-plugin-dialogs": {},
       "cordova-plugin-file": {},
       "cordova-plugin-client-certificate-support": {}
     }
+  },
+  "devDependencies": {
+    "cordova-plugin-client-certificate-support": "github:cordova-ccafix/cordova-plugin-client-certificate-support",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-file": "^6.0.2"
   }
 }
