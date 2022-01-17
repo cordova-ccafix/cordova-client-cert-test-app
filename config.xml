@@ -8,4 +8,7 @@
         @brodybits (Christopher J. Brody aka Chris Brody)
     </author>
     <content src="index.html" />
+<preference name="scheme" value="app" />
+<preference name="hostname" value="localhost" />
+
 </widget>
