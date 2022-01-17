@@ -23,11 +23,13 @@
     "plugins": {
       "cordova-plugin-dialogs": {},
       "cordova-plugin-file": {},
-      "cordova-plugin-client-certificate-support": {}
+      "cordova-plugin-client-certificate-support": {},
+      "@brodybits/cordova-plugin-ios-xhr": {}
     }
   },
   "devDependencies": {
-    "cordova-plugin-client-certificate-support": "github:cordova-ccafix/cordova-plugin-client-certificate-support",
+    "@brodybits/cordova-plugin-ios-xhr": "^0.0.1-rc01",
+    "cordova-plugin-client-certificate-support": "^0.0.6",
     "cordova-plugin-dialogs": "^2.0.2",
     "cordova-plugin-file": "^6.0.2"
   }
